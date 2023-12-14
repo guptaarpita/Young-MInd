@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Minds NGO</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        section.hero {
+            background: url('https://www.cry.org/wp-content/themes/cry/images/children-banner.jpg') center/cover no-repeat;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+        section.hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        section.hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        section.mission {
+            padding: 50px;
+            text-align: center;
+        }
+        section.mission h2 {
+            color: #3498db;
+        }
+        section.mission p {
+            line-height: 1.6;
+        }
+        section.programs {
+            background-color: #fff;
+            padding: 50px;
+        }
+        section.programs h2 {
+            color: #3498db;
+            text-align: center;
+        }
+        section.programs p {
+            text-align: center;
+            line-height: 1.6;
+        }
+        section.get-involved {
+            background-color: #3498db;
+            color: #fff;
+            padding: 50px;
+            text-align: center;
+        }
+        section.get-involved h2 {
+            color: #fff;
+        }
+        section.get-involved p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <h1>Young Minds NGO</h1>
+    </header>
+        <img src="data:image/png;base64,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" alt="NGO Logo" style="display: block; margin: 0 auto; width: 200px;"><br>
+    
+
+    <section class="hero">
+        <h1>Empowering Young Minds for a Brighter Future</h1>
+        <p>Together, we inspire, educate, and create opportunities for every child.</p>
+    </section>
+
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>
+            At Young Minds NGO, we are on a mission to provide quality education and support to children, ensuring their holistic development and preparing them for a successful future.
+            <br>
+           <a href ="file:///D:/New%20folder/New%20folder/Our%20Mission.html#mission">Our MIssion And Work</a>
+        </p>
+    </section>
+
+    <section class="get-involved">
+        <h2>About</h2>
+        <p>
+            Join us in making a difference in the lives of children. Whether you want to volunteer, donate, or partner with us, your support helps us create a positive impact.
+            <br>
+           <a href ="file:///D:/New%20folder/New%20folder/About.html">Know More About Us</a>
+        </p>
+    </section>
+
+    <section class="programs">
+        <h2>Programs and Services</h2>
+        <p>
+            We offer a range of programs, including after-school tutoring, mentorship programs, and educational workshops, to nurture the intellectual and emotional growth of young minds.
+            <br>
+            <a href ="file:///D:/New%20folder/New%20folder/Program%20And%20Services%20Page.html">Our Services</a>
+        </p>
+    </section>
+
+    <section class="get-involved">
+        <h2>Get Involved</h2>
+        <p>
+            Join us in making a difference in the lives of children. Whether you want to volunteer, donate, or partner with us, your support helps us create a positive impact.
+            <br>
+           <a href ="file:///D:/New%20folder/New%20folder/Get%20involved.html">Get Involve in our mission now!</a>
+        </p>
+    </section>
+    <br>
+    <br>
+
+    <section class="get-involved">
+        <h2>Donation</h2>
+        <p>
+
+        Making a donation is easy and secure. Visit our Donation Page to contribute online, 
+        or contact us at [contact@yourngo.org] for more information on other donation methods.
+            <br>
+           <a href ="file:///D:/New%20folder/New%20folder/Donation.html">Donation</a>
+           
+        </p>
+    </section>
+
+    <footer>
+        <p>Thank you for being a catalyst for change and contributing to the education of the next generation.
+            <a href="file:///D:/New%20folder/New%20folder/Thankyou%20Page.html">Thanks For Donating</a>
+
+            Together, we can create a world where every child has the opportunity to learn, grow, and succeed.</p>
+        <p>Contact us: info@youngmindsngo.org | Follow us on social media:<a href="file:///D:/New%20folder/New%20folder/Join%20US.html"> @YoungMindsNGO</a></p>
+    </footer>
+
+</body>
+</html>
